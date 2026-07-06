@@ -318,13 +318,28 @@ button {
   gap: 1rem;
 }
 
+.hero-image,
+.access-map {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, #f6fbff 0%, #e7f1fa 100%);
+  box-shadow: var(--color-shadow);
+}
+
+.hero-image {
+  aspect-ratio: 6 / 7;
+}
+
+.access-map {
+  aspect-ratio: 4 / 3;
+}
+
 .hero-image img,
 .access-map img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--color-shadow);
 }
 
 .hero-card {
